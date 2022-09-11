@@ -1,0 +1,215 @@
+body{
+    font-family: "Roboto",monospace;
+}
+header{
+    height: 3.75rem;
+    background-color:rgb(255,213,204);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.mobile {
+    display: none;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+    color: rgb(81,24,73);
+}
+.logo {
+    font-family: "Cedarville Cursive",monospace;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 3rem;
+    margin-top: 0.4rem;
+    margin-right: 0.625rem;
+    width: auto;
+}
+
+.desktop ul{
+    display: flex;
+    align-items: center;
+}
+
+li img{
+    height: 2.5rem;
+    width: auto;
+    padding-left: 2.5rem;
+    padding-top: 0.5rem;
+}
+
+.desktop a{
+    text-decoration: none;
+    color: rgb(81,24,73);
+
+}
+@media screen and (max-width:600px){
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: contents;
+    }
+    .mobile ul{
+        display: inline-flex;
+        min-width: 100%;
+        justify-content: space-around;
+    }
+
+    .mobile img {
+        padding-top: 0.4rem;
+        padding-left: 0;
+        height: 3rem;
+    }
+
+    .header{
+        position: fixed;
+    }
+
+    header .content {
+        /* ju */
+        min-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mobile .logoimg {
+        padding-top: 0;
+        height: 6rem;
+        width: auto;
+        position: relative;
+        top: 0px;
+    }
+    
+}
+.main {
+    position: relative;
+    top: 3.75rem;
+}
+
+.hero-image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255,213,204)
+}
+
+.hero-image h1 {
+    font-size: 5rem;
+    font-family: "Cedarville Cursive",monospace;
+    border-bottom: 3px solid rgb(255,213,204);
+}
+
+@media screen and (max-width:768px){
+    .hero-image h1{
+        font-size: 4rem;
+        border-bottom: 0px;
+    }
+    .hero-image {
+        height: 25rem;
+    }
+}
+
+.row {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .row img {
+    border-radius: 8px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 33%;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    object-fit: cover;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 600px) {
+    .row{
+        width: 100%;
+    }
+    .column {
+      flex: 50%;
+      max-width: 45%;
+    }
+    .col3 {
+        display: grid;
+        min-width: 100%;
+        grid-column-gap: 4px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+
+    .col2 img {
+        min-height: 48%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+
+ 
+  
+
+.button-1 {
+  background-color: rgb(255,213,204);
+  border: 1px solid black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: rgb(81,24,73);
+
+  /* color: #FFFFFF; */
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}

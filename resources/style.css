@@ -334,6 +334,7 @@ li img{
     }
 
     .address-section{
+        text-align: center;
         width: auto;
         margin-bottom: 2rem;
 
@@ -362,12 +363,20 @@ li img{
 	margin-top:16px;
     color: white;
 }
+
+iframe{
+    border-radius: 8px;
+}
   
 
 @media screen and (max-width:640px){
     iframe{
         height: 200px;
         width: 300px;
+    }
+
+    .review-container{
+        border-bottom: 1px solid rgb(253,222,156);
     }
 
     .address-section{

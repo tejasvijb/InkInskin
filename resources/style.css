@@ -235,6 +235,7 @@ li img{
 .review-container span {
     font-weight: 600;
     background-color: rgb(253,222,156);
+    padding: 3px;
 
 }
 
@@ -310,6 +311,7 @@ li img{
     display: inline-block;
     margin-bottom: 1rem;
     background-color: rgb(253,222,156);
+    padding: 3px;
 
 }
 

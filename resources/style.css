@@ -234,6 +234,8 @@ li img{
 
 .review-container span {
     font-weight: 600;
+    background-color: rgb(253,222,156);
+
 }
 
 .review-container p{
@@ -305,8 +307,10 @@ li img{
 
 .address span{
     font-weight: 600;
-    display: block;
+    display: inline-block;
     margin-bottom: 1rem;
+    background-color: rgb(253,222,156);
+
 }
 
 .address{

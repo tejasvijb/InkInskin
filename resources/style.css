@@ -167,9 +167,10 @@ li img{
     .col3 {
         display: grid;
         min-width: 100%;
-        grid-column-gap: 4px;
+        grid-column-gap: 8px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        padding: 1px 1.4rem;
         
     }
 
